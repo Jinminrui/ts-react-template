@@ -1,7 +1,6 @@
 import LoginPage from 'pages/Login';
 import HomePage from 'pages/Home';
 import ErrorPage from 'pages/404';
-import EditorPage from 'pages/Editor';
 import { FC } from 'react';
 
 export interface RouteItem {
@@ -28,10 +27,6 @@ const RouteConfig: Array<RouteItem> = [
   {
     path: '/404',
     component: ErrorPage,
-  },
-  {
-    path: '/editor',
-    component: EditorPage,
   },
 ];
 
