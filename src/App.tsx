@@ -1,16 +1,15 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Switch, withRouter } from 'react-router-dom';
-import RouteConfig from 'components/AuthRoute/route.config';
-import AuthRoute from 'components/AuthRoute';
+import { Switch, withRouter, Route } from 'react-router-dom';
 import 'static/styles/index.scss';
+import Home from 'pages/Home';
 import store from './store';
 
 const App: React.FC = () => (
   <Provider store={store}>
     <div className="App">
       <Switch>
-        <AuthRoute config={RouteConfig} />
+        <Route component={Home} path="/home" />
       </Switch>
     </div>
   </Provider>
